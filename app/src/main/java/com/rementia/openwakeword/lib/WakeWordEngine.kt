@@ -153,12 +153,12 @@ class WakeWordEngine(
      * ```
      * 
      * @throws IllegalStateException if RECORD_AUDIO permission is not granted
-     * @throws RuntimeException if audio recording fails to initialize
+     * @param onRecordingError Handles asynchronous microphone failures on the recording coroutine.
      * 
      * @see stop
      * @see detections
      */
-    fun start() {
+    fun start(onRecordingError: ((Throwable) -> Unit)? = null) {
         require(audioRecorder.hasRecordPermission()) { 
             "RECORD_AUDIO permission is required for wake word detection" 
         }
@@ -166,6 +166,10 @@ class WakeWordEngine(
         recordingJob?.cancel()
         recordingJob = scope.launch {
             audioRecorder.startRecording()
+                .catch { error ->
+                    if (onRecordingError == null) throw error
+                    onRecordingError(error)
+                }
                 .collect { audioBuffer ->
                     // Process all models in parallel and collect results
                     val detectionResults = models.mapIndexed { index, model ->

@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <queries>
+        <!-- Reads the Settings app's own menu names so Jarvis can say them as the phone shows them. -->
+        <package android:name="com.android.settings" />
         <intent>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
@@ -24,11 +26,14 @@
 
     <application
         android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="Jarvis"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/JarvisTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
+            android:clearTaskOnLaunch="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,17 +42,22 @@
         </activity>
 
         <activity
-            android:name=".LanguageActivity"
+            android:name=".ui.LanguageActivity"
             android:exported="false"
             android:label="Choose language" />
 
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false"
+            android:label="Settings" />
+
         <service
-            android:name=".VoiceService"
+            android:name=".listening.VoiceService"
             android:exported="false"
             android:foregroundServiceType="microphone" />
 
         <service
-            android:name=".NovaAccessibilityService"
+            android:name=".actions.JarvisAccessibilityService"
             android:exported="true"
             android:label="Jarvis"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">

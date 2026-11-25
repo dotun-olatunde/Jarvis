@@ -10,6 +10,8 @@
     "recents": ["recent apps", "show me the apps wey i open"],
     "notifications": ["wetin dey notification", "show notification", "open notification"],
     "quick_settings": ["quick setting", "open quick setting"],
+    "open_accessibility": ["open accessibility setting", "accessibility setting"],
+    "open_app_settings": ["open app setting", "app setting", "restricted setting"],
     "read_screen": ["read screen", "tell me wetin dey screen", "wetin dey this screen", "read am"],
     "read_buttons": ["read buttons", "which button dey here", "wetin i fit press"],
     "scroll_down": ["scroll down", "go down"],
@@ -46,7 +48,7 @@
     "tapfail": "The press no work.",
     "disabled": "%s don grey, you no fit press am.",
     "choose": "I see %d for %s. Talk first, second and so on.",
-    "noservice": "Abeg on Jarvis for accessibility settings.",
+    "noservice": "Abeg on Jarvis for [[accessibility]] settings.",
     "nocontacts": "I need permission to read your contacts.",
     "contact_missing": "I no see contact wey dem call %s.",
     "app_missing": "I no see app wey dem call %s.",
@@ -64,6 +66,12 @@
     "unlabeled": "%d buttons no get name.",
     "need_arg": "Talk am again with the name.",
     "openfail": "I no fit open am.",
-    "help": "You fit talk: go back, go home, read screen, read buttons, press and the button name, open and the app name, call or whatsapp and the contact name, search, write, or change language. Start with my name."
+    "help": "You fit talk: go back, go home, read screen, read buttons, press and the button name, open and the app name, call or whatsapp and the contact name, search, write, or change language. Start with my name.",
+    "welcome": "How far, na me be Jarvis, your voice helper. Talk %s, wait make e beep, then ask me anything. I fit read your screen, press button, fill form, open app, call people and answer question. Talk help anytime.",
+    "setup_hint": "First, you go need on me for [[accessibility]] settings. Talk open accessibility settings, find Jarvis for the list and on am. If e no gree on, talk open app settings, press the three dots for top right, choose [[restricted]], then try again.",
+    "noservice_open": "I no fit open app until you on Jarvis for [[accessibility]] settings. I don put message for your notification. Press am make you set me up.",
+    "no_search": "I no see search box for this screen.",
+    "prompt": "I dey hear you. Wetin you want?",
+    "idle_bye": "Okay, I dey here. Talk %s when you need me."
   }
 }

@@ -60,17 +60,16 @@ internal class AudioRecorder(
             bufferSize
         )
         
-        if (audioRecord.state != AudioRecord.STATE_INITIALIZED) {
-            throw IllegalStateException("Failed to initialize AudioRecord")
-        }
-        
-        val audioBuffer = ShortArray(BUFFER_SIZE_IN_SHORTS)
-        
         try {
+            check(audioRecord.state == AudioRecord.STATE_INITIALIZED) { "Failed to initialize AudioRecord" }
+            val audioBuffer = ShortArray(BUFFER_SIZE_IN_SHORTS)
             audioRecord.startRecording()
+            check(audioRecord.recordingState == AudioRecord.RECORDSTATE_RECORDING) { "AudioRecord did not start recording" }
             
             while (coroutineContext.isActive) {
                 val readCount = audioRecord.read(audioBuffer, 0, audioBuffer.size)
+                if (!coroutineContext.isActive) break
+                check(readCount >= 0) { "Microphone read failed ($readCount)" }
                 
                 if (readCount > 0) {
                     // Keep raw int16 scale (-32768..32767). openWakeWord's melspectrogram model and
@@ -83,9 +82,6 @@ internal class AudioRecorder(
                 }
             }
         } finally {
-            if (audioRecord.recordingState == AudioRecord.RECORDSTATE_RECORDING) {
-                audioRecord.stop()
-            }
             audioRecord.release()
         }
     }.flowOn(Dispatchers.IO)

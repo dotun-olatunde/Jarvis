@@ -13,11 +13,11 @@ plugins {
 }
 
 android {
-    namespace = "ng.ainow.nova"
+    namespace = "ng.ainow.jarvis"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ng.ainow.nova"
+        applicationId = "ng.ainow.jarvis"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -54,7 +54,7 @@ dependencies {
     // On-device OCR. Bundled model: works offline immediately, adds a few MB.
     implementation("com.google.mlkit:text-recognition:16.0.1")
 
-    // Wake word ("Hey Nova" style): vendored openWakeWord Kotlin port (Apache-2.0) needs these.
+    // Wake word ("Hey Jarvis" style): vendored openWakeWord Kotlin port (Apache-2.0) needs these.
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.18.0")
     implementation("org.apache.commons:commons-math3:3.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")

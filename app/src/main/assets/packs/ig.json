@@ -10,6 +10,8 @@
     "recents": ["ngwa ndị n'oge na-adịbeghị anya", "ngwa ọhụrụ"],
     "notifications": ["ọkwa", "gosi ọkwa", "mepee ọkwa"],
     "quick_settings": ["ntọala ngwa ngwa", "mepee ntọala ngwa ngwa"],
+    "open_accessibility": ["mepee ntọala accessibility", "ntọala accessibility"],
+    "open_app_settings": ["mepee ntọala ngwa", "ntọala ngwa", "restricted settings"],
     "read_screen": ["gụọ ihuenyo", "gụọ ihe dị n'ihuenyo", "gụọ nke a"],
     "read_buttons": ["gụọ bọtịnụ", "bọtịnụ ndị dị ebe a"],
     "scroll_down": ["gbadata", "gaa ala"],
@@ -46,7 +48,7 @@
     "tapfail": "Ọpịa ahụ adịghị arụ ọrụ.",
     "disabled": "%s adịghị arụ ọrụ ugbu a, enweghị ike ịpịa ya.",
     "choose": "Achọtara m %d yiri %s. Sị nke mbụ, nke abụọ, wdg.",
-    "noservice": "Biko gbanye Jarvis na ntọala accessibility.",
+    "noservice": "Biko gbanye Jarvis na ntọala [[accessibility]].",
     "nocontacts": "Achọrọ m ikike ịgụ kọntaktị gị.",
     "contact_missing": "Achọtaghị m kọntaktị akpọrọ %s.",
     "app_missing": "Achọtaghị m ngwa akpọrọ %s.",
@@ -64,6 +66,12 @@
     "unlabeled": "Bọtịnụ %d enweghị aha.",
     "need_arg": "Kwughachi ya na aha.",
     "openfail": "Enweghị m ike imeghe ya.",
-    "help": "Ị nwere ike ịsị: laghachi, ụlọ, gụọ ihuenyo, gụọ bọtịnụ, pịa na aha bọtịnụ, meghee na aha ngwa, kpọọ ma ọ bụ whatsapp na aha kọntaktị, chọọ, dee, ma ọ bụ gbanwee asụsụ. Malite site n'aha m."
+    "help": "Ị nwere ike ịsị: laghachi, ụlọ, gụọ ihuenyo, gụọ bọtịnụ, pịa na aha bọtịnụ, meghee na aha ngwa, kpọọ ma ọ bụ whatsapp na aha kọntaktị, chọọ, dee, ma ọ bụ gbanwee asụsụ. Malite site n'aha m.",
+    "welcome": "Ndewo, abụ m Jarvis, onye inyeaka olu gị. Sị %s, chere ka ụda bip daa, wee jụọ m ihe. Enwere m ike ịgụ ihuenyo, ịpị bọtịnụ, idejupụta fọm, imeghe ngwa, ịkpọ ndị mmadụ na ịza ajụjụ. Sị enyemaka mgbe ọ bụla.",
+    "setup_hint": "Nke mbụ, ị ga-agbanye m na ntọala [[accessibility]]. Sị mepee ntọala [[en:accessibility]], chọta Jarvis na ndepụta ahụ ma gbanye ya. Ọ bụrụ na ọ naghị agbanye, sị mepee ntọala ngwa, pịa ntụpọ atọ dị n'elu n'aka nri, họrọ [[restricted]], wee nwaa ọzọ.",
+    "noservice_open": "Enweghị m ike imeghe ngwa ruo mgbe a gbanyere Jarvis na ntọala [[accessibility]]. Etinyela m ozi na notification gị. Pịa ya ka ị hazie m.",
+    "no_search": "Achọtaghị m igbe nchọta na ihuenyo a.",
+    "prompt": "Ana m ege ntị. Gịnị ka ị chọrọ?",
+    "idle_bye": "Ọ dị mma, m ka nọ ebe a. Sị %s mgbe ị chọrọ m."
   }
 }
