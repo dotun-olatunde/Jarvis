@@ -10,6 +10,8 @@
     "recents": ["manhajoji na kwanan nan", "kwanan nan"],
     "notifications": ["sanarwa", "nuna sanarwa", "buɗe sanarwa"],
     "quick_settings": ["saitunan gaggawa", "buɗe saitunan gaggawa"],
+    "open_accessibility": ["buɗe saitunan accessibility", "saitunan accessibility"],
+    "open_app_settings": ["buɗe saitunan manhaja", "saitunan manhaja", "restricted settings"],
     "read_screen": ["karanta allo", "karanta abin da ke kan allo", "karanta wannan"],
     "read_buttons": ["karanta maɓallai", "waɗanne maɓallai ke nan"],
     "scroll_down": ["gungura ƙasa", "ƙasa"],
@@ -46,7 +48,7 @@
     "tapfail": "Dannawar ba ta yi aiki ba.",
     "disabled": "%s ya yi launin toka, don haka ba za a iya danna shi ba.",
     "choose": "Na sami %d masu kama da %s. Ka ce na farko, na biyu, da sauransu.",
-    "noservice": "Don Allah kunna Jarvis a saitunan accessibility.",
+    "noservice": "Don Allah kunna Jarvis a saitunan [[accessibility]].",
     "nocontacts": "Ina bukatar izini don karanta lambobinka.",
     "contact_missing": "Ban sami lambar da ake kira %s ba.",
     "app_missing": "Ban sami manhajar da ake kira %s ba.",
@@ -64,6 +66,12 @@
     "unlabeled": "Maɓallai %d ba su da suna.",
     "need_arg": "Sake faɗa tare da suna.",
     "openfail": "Ban iya buɗe shi ba.",
-    "help": "Za ka iya cewa: koma baya, gida, karanta allo, karanta maɓallai, danna da sunan maɓalli, buɗe da sunan manhaja, kira ko whatsapp da sunan lamba, bincika, rubuta, ko canza harshe. Fara da sunana."
+    "help": "Za ka iya cewa: koma baya, gida, karanta allo, karanta maɓallai, danna da sunan maɓalli, buɗe da sunan manhaja, kira ko whatsapp da sunan lamba, bincika, rubuta, ko canza harshe. Fara da sunana.",
+    "welcome": "Sannu, ni ne Jarvis, mataimakin muryarka. Ka ce %s, ka jira ƙarar bip, sannan ka tambaye ni wani abu. Zan iya karanta allo, danna maɓallai, cike fom, buɗe manhajoji, kiran mutane da amsa tambayoyi. Ka ce taimako a kowane lokaci.",
+    "setup_hint": "Da farko, sai ka kunna ni a saitunan [[accessibility]]. Ka ce buɗe saitunan [[en:accessibility]], ka nemo Jarvis a jerin, ka kunna shi. Idan bai kunnu ba, ka ce buɗe saitunan manhaja, ka danna ɗigo uku a sama ta dama, ka zaɓi [[restricted]], sannan ka sake gwadawa.",
+    "noservice_open": "Ba zan iya buɗe manhajoji ba sai an kunna Jarvis a saitunan [[accessibility]]. Na saka saƙo a sanarwarka. Ka danna shi don saita ni.",
+    "no_search": "Ban sami akwatin bincike a wannan allon ba.",
+    "prompt": "Ina saurare. Me kake so?",
+    "idle_bye": "To, ina nan. Ka ce %s idan kana bukata ta."
   }
 }

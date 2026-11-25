@@ -10,6 +10,8 @@
     "recents": ["àwọn app àìpẹ́", "app àìpẹ́"],
     "notifications": ["ìfitónilétí", "àwọn ìfitónilétí", "ṣí ìfitónilétí"],
     "quick_settings": ["ètò kíákíá", "ṣí ètò kíákíá"],
+    "open_accessibility": ["ṣí ètò accessibility", "ètò accessibility"],
+    "open_app_settings": ["ṣí ètò app", "ètò app", "restricted settings"],
     "read_screen": ["ka ojú ìbòjú", "ka ohun tó wà lójú ìbòjú", "ka èyí"],
     "read_buttons": ["ka àwọn bọ́tìnì", "àwọn bọ́tìnì wo ni wà níbí"],
     "scroll_down": ["sọ̀kalẹ̀", "lọ sísàlẹ̀"],
@@ -46,7 +48,7 @@
     "tapfail": "Títẹ̀ náà kò ṣiṣẹ́.",
     "disabled": "%s ti di grey, a ò lè tẹ̀ ẹ́.",
     "choose": "Mo rí %d tó jọra fún %s. Sọ àkọ́kọ́, èkejì, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.",
-    "noservice": "Jọ̀wọ́ tan Jarvis nínú ètò accessibility.",
+    "noservice": "Jọ̀wọ́ tan Jarvis nínú ètò [[accessibility]].",
     "nocontacts": "Mo nílò àyè láti ka àwọn contact rẹ.",
     "contact_missing": "Mi ò rí contact tí wọ́n ń pè ní %s.",
     "app_missing": "Mi ò rí app tí wọ́n ń pè ní %s.",
@@ -64,6 +66,12 @@
     "unlabeled": "%d bọ́tìnì kò ní orúkọ.",
     "need_arg": "Tún sọ ọ́ pẹ̀lú orúkọ.",
     "openfail": "Mi ò lè ṣí i.",
-    "help": "O lè sọ: padà, ilé, ka ojú ìbòjú, ka àwọn bọ́tìnì, tẹ pẹ̀lú orúkọ bọ́tìnì, ṣí pẹ̀lú orúkọ app, pe tàbí whatsapp pẹ̀lú orúkọ contact, wá, kọ, tàbí yí èdè padà. Bẹ̀rẹ̀ pẹ̀lú orúkọ mi."
+    "help": "O lè sọ: padà, ilé, ka ojú ìbòjú, ka àwọn bọ́tìnì, tẹ pẹ̀lú orúkọ bọ́tìnì, ṣí pẹ̀lú orúkọ app, pe tàbí whatsapp pẹ̀lú orúkọ contact, wá, kọ, tàbí yí èdè padà. Bẹ̀rẹ̀ pẹ̀lú orúkọ mi.",
+    "welcome": "Ẹ n lẹ́, èmi ni Jarvis, olùrànlọ́wọ́ ohùn rẹ. Sọ %s, dúró de ìró bíìpù, lẹ́yìn náà béèrè nǹkan lọ́wọ́ mi. Mo lè ka ojú ìbòjú, tẹ bọ́tìnì, kún fọ́ọ̀mù, ṣí app, pe àwọn ènìyàn, kí n sì dáhùn ìbéèrè. Sọ ìrànlọ́wọ́ nígbàkígbà.",
+    "setup_hint": "Ní àkọ́kọ́, o gbọ́dọ̀ tan mí nínú ètò [[accessibility]]. Sọ ṣí ètò [[en:accessibility]], wá Jarvis nínú àkójọ náà kí o sì tàn án. Tí kò bá tàn, sọ ṣí ètò app, tẹ àmì mẹ́ta lókè lápá ọ̀tún, yan [[restricted]], kí o sì tún gbìyànjú.",
+    "noservice_open": "Mi ò lè ṣí app títí wọ́n á fi tan Jarvis nínú ètò [[accessibility]]. Mo ti fi ìránṣẹ́ sínú notification rẹ. Tẹ̀ ẹ́ láti ṣètò mi.",
+    "no_search": "Mi ò rí àpótí ìwádìí lójú ìbòjú yìí.",
+    "prompt": "Mo ń gbọ́. Kí ni o fẹ́?",
+    "idle_bye": "Ó dáa, mo wà níbí. Sọ %s nígbà tí o bá nílò mi."
   }
 }
