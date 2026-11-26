@@ -1,7 +1,6 @@
-# Jarvis — known limitations
+# Jarvis' — known limitations
 
-A running list of gaps and trade-offs, kept up to date as Jarvis is built. Written for the
-hackathon write-up: what doesn't work yet, why, and what it would take to fix.
+A running list of gaps and trade-offs, kept up to date as Jarvis is built. Includes what doesn't work yet, why, and what it would take to fix.
 
 ## Cost
 
@@ -51,7 +50,7 @@ hackathon write-up: what doesn't work yet, why, and what it would take to fix.
   Hausa within one text reloads the voice (about 1 second on the emulator).
 - **Short Igbo sentences are padded with dots** to reach YarnGPT's 20-character minimum. The dots
   aren't voiced, but it's a workaround, not a supported feature.
-- **Meta's MMS voices are licensed for non-commercial use only** (CC BY-NC 4.0). Fine for a hackathon;
+- **Meta's MMS voices are licensed for non-commercial use only** (CC BY-NC 4.0). Fine for preliminary testing and demos;
   a commercial release would need another voice or a licence from Meta.
 - **YarnGPT has a wait before speaking:** about 2.5 seconds for one sentence, longer for longer text,
   because it makes the whole clip before sending any of it. Jarvis fetches one sentence at a time, so
